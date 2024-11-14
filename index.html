@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Himayam Newz</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .app-store-preview {
+      width: 90%;
+      max-width: 600px;
+      margin: 20px;
+    }
+
+    .app-title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .app-title img {
+      width: 80px;
+      height: 80px;
+      border-radius: 15%;
+      margin-right: 15px;
+    }
+
+    .app-info h1 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .app-info p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .rating {
+      font-size: 14px;
+      color: #666;
+      margin-top: 5px;
+    }
+
+    .rating span {
+      color: #ff9500;
+    }
+
+    .screenshots {
+      display: flex;
+      overflow-x: auto;
+      padding: 15px 0;
+    }
+
+    .screenshot img {
+      width: 200px;
+      margin-right: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .screenshot img:last-child {
+      margin-right: 10;
+    }
+
+  
+     .container {
+      width: 90%;
+      max-width: 600px;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .version-info, .rating-info {
+      color: #999;
+      font-size: 14px;
+    }
+
+    .whats-new {
+      margin-bottom: 20px;
+    }
+
+    .whats-new p {
+      margin-top: 5px;
+      color: #333;
+    }
+
+    .link {
+      color: #007aff;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .ratings-reviews {
+      margin-bottom: 20px;
+    }
+
+    .rating-overview {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .rating-overview .rating-number {
+      font-size: 48px;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .rating-overview .rating-out-of {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .rating-bar {
+      width: 100%;
+      height: 10px;
+      background-color: #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      margin: 5px 0;
+      position: relative;
+    }
+
+    .rating-bar .fill {
+      width: 80%;
+      height: 100%;
+      background-color: #ff9500;
+    }
+
+    .review {
+      border: 1px solid #ddd;
+      padding: 10px;
+      border-radius: 8px;
+      background-color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .review .review-rating {
+      font-size: 20px;
+      color: #ff9500;
+      margin-right: 5px;
+    }
+
+    .review .review-title {
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+    .review .review-date {
+      color: #666;
+      font-size: 12px;
+    }
+
+    .events {
+      margin-bottom: 20px;
+    }
+
+    .event-card {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: #fff;
+    }
+
+    .event-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .event-details {
+      padding: 10px;
+    }
+
+    .event-status {
+      color: #007aff;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .event-title {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .event-description {
+      font-size: 14px;
+      color: #666;
+      margin-top: 5px;
+    }
+    .dd{
+      height: 48px;
+      width: 90%;
+      background-color: #007aff;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      }
+      .ddd{
+        color: white;
+        height: 100%;
+        width: 100%;
+        display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 500;
+      }
+      center{
+        margin-bottom: 24px;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      center a{
+        text-decoration: none;
+        color: #007aff;
+      }
+  </style>
+</head>
+<body>
+  <div class="app-store-preview">
+    <div class="app-title">
+      <img src="IMG-20241030-WA0002.jpg" alt="App Icon">
+      <div class="app-info">
+        <h1>Himayam Newz</h1>
+        <p>Newz, Magazines & Events</p>
+        <p class="rating">#1 in Entertainment • <span>4.9 ★</span> • 1M Ratings</p>
+      </div>
+    </div>
+    
+    <div class="screenshots">
+      <div class="screenshot">
+        <img src="Screenshot_20241112-212739~2.png" alt="Screenshot 1">
+      </div>
+      <div class="screenshot">
+        <img src="Screenshot_20241112-212856~2.png" alt="Screenshot 2">
+      </div>
+      <div class="screenshot">
+        <img src="Screenshot_20241112-212937~2.png" alt="Screenshot 3">
+      </div>
+    </div>
+  </div>
+  <a href="Himayam Newz 2.0.apk" class="ddd">
+  <div class="dd">
+    
+      Download
+    
+  </div>
+  </a>
+    <div class="container" style="margin-top:20px;">
+    <!-- What's New Section -->
+    <div class="whats-new">
+      <p class="section-title">What’s New</p>
+      <p class="version-info">Version 2.0</p>
+      <p>Fixed bugs, improved performance, explored the edges of the known universe.</p>
+      <a href="#" class="link">Version History</a>
+    </div>
+
+    <!-- Ratings and Reviews Section -->
+    <div class="ratings-reviews">
+      <p class="section-title">Ratings and Reviews</p>
+      <div class="rating-overview">
+        <div class="rating-number">4.9</div>
+        <div>
+          <div class="rating-out-of">out of 5</div>
+          <div class="rating-info">1M Ratings</div>
+        </div>
+      </div>
+      
+      <!-- Rating Bar (example for demonstration) -->
+      <div class="rating-bar">
+        <div class="fill" style="width: 95%;"></div>
+      </div>
+      
+      <!-- Sample Review -->
+      <div class="review">
+        <div class="review-rating">★★★★★</div>
+        <p class="review-date">App User, 11/11/2024</p>
+        <p class="review-title">Amazing News App with a Fresh Perspective!</p>
+        <p>I've been using Himayam Newz for a while now, and it has quickly become my go-to source for news. The app is incredibly well-designed, with a clean and intuitive layout that makes reading news enjoyable and easy.
+<br> <br>
+I appreciate how Himayam Newz covers a wide range of topics, from local updates to global headlines, and even niche interests that other platforms often miss. The notifications are timely without being overwhelming, and I love the personalized recommendations that help me stay informed on topics I care about.
+<br> <br>
+One of the best things about Himayam Newz is its commitment to accuracy and unbiased reporting. It's refreshing to have a news source that presents facts clearly and thoughtfully. The developers are clearly dedicated to improving the app, as I’ve noticed continuous updates and improvements.
+<br> <br>
+Highly recommend for anyone looking for a reliable, user-friendly news app that stands out from the crowd. Keep up the great work, Himayam team!</p>
+      </div>
+    </div>
+
+    <!-- Events Section -->
+    <div class="events">
+      <p class="section-title">Events</p>
+      <p class="event-status">NOW AVAILABLE</p>
+      <div class="event-card">
+        <img src="IMG-20241113-WA0000.jpg" alt="NFL Event">
+        <div class="event-details">
+          <p class="event-title">From November 14! Himayam Newz Rebirth!!</p>
+          <p class="event-description">Get ready for the relaunch of Himayam Newz with the updateed version 2.0</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <center>
+    <a href="https://ponvasanth.fun">Ponvasanth </a>|<a href="https://hemanthcrush.42web.io"> Hemanth</a>
+  </center>
+</body>
+</html>
